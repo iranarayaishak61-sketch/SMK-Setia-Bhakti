@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>SMK Setia Bhakti</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="image/logosb.png" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+
+    <style>
+      :root {
+        --pr-ungu: #362fd9;
+      }
+
+      body {
+        font-family: "Poppins";
+        background-color: #e5e5e5;
+      }
+
+      /* Style Navbar */
+      .navbar {
+        z-index: 3;
+      }
+      * {
+        z-index: 2;
+      }
+      .accent-banner {
+        z-index: 1;
+      }
+      .navbar-brand {
+        font-size: 30px;
+        font-weight: 700;
+      }
+      .nav-sb {
+        color: #000;
+      }
+      .logo-text {
+        color: var(--pr-ungu);
+      }
+      .nav-link {
+        font-size: 18px;
+        font-weight: 400;
+        color: black;
+      }
+      .nav-link:hover {
+        color: var(--pr-ungu);
+        font-weight: 700;
+      }
+      .brnd {
+        color: var(--pr-ungu);
+        font-size: 18px;
+        font-weight: 700;
+      }
+
+      .btn-contact {
+        width: 133px;
+        height: 40px;
+        background-color: var(--pr-ungu);
+        border: none;
+        font-size: 16px;
+        font-weight: 700;
+        color: #fff;
+        border-radius: 30px;
+      }
+      /* End Style Navbar */
+
+      /* Style Hero */
+      #hero {
+        background-color: #fff;
+        height: 100vh;
+      }
+      .text-hero {
+        font-size: 72px;
+      }
+      .text-SB {
+        color: var(--pr-ungu);
+      }
+      h1 {
+        font-size: 60px;
+        font-weight: 700;
+      }
+      p {
+        font-size: 20px;
+        font-weight: 500;
+        color: #747474;
+      }
+      .btn-lg {
+        width: 268px;
+        height: 68px;
+        font-size: 22px;
+        background-color: var(--pr-ungu);
+        color: #fff;
+        border: none;
+        border-radius: 50px;
+      }
+      .btn-lg1 {
+        width: 168px;
+        height: 68px;
+        font-size: 22px;
+        border: 2px solid var(--pr-ungu);
+        color: var(--pr-ungu);
+        border-radius: 50px;
+      }
+      .socialm {
+        color: #000;
+        font-size: 20px;
+        font-weight: 500;
+      }
+      .text-heroo {
+        padding-top: 150px;
+      }
+      /* End Style Hero */
+
+      /* Style Alasan SMK SB */
+      #alasan-sb {
+        padding: 50px 0;
+        width: 100%;
+      }
+      .alasan-text {
+        font-size: 40px;
+      }
+      .txt-alsn {
+        font-size: 18px;
+        font-weight: 500;
+      }
+      .card-alasan {
+        height: 284px;
+        border-radius: 10px;
+        background-color: #fff;
+        padding: 40px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        transition: box-shadow 0.3s ease;
+      }
+      .card-alasan:hover {
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+      }
+      .container-img {
+        height: 60px;
+        width: 60px;
+      }
+      .card-alasan h4 {
+        font-size: 20px;
+        font-weight: 600;
+      }
+      .card-alasan p {
+        font-size: 15px;
+        font-weight: 500;
+      }
+      /* End Style Alasan SMK SB */
+
+      /* Style Profil SB */
+      #Profil {
+        padding: 45px 0;
+        width: 100%;
+      }
+      .sambutan h2{
+        font-size: 30px;
+        font-weight: 700;
+      }
+      .sambutan p{
+        font-size: 16px;
+      }
+      .btn-prfl{
+        height: 62px;
+        width: 212px;
+        background-color: var(--pr-ungu);
+        color: #fff;
+        border: none;
+        border-radius: 50px;
+      }
+      /* End Style Profil SB */
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav
+      class="navbar navbar-expand-lg bg-transparent navbar-dark position-fixed w-100"
+    >
+      <div class="container">
+        <a class="navbar-brand nav-sb" href="#"
+          ><img
+            src="image/logosb.png"
+            alt="Logo"
+            width="38"
+            height="38"
+            class="d-inline-block align-text-top me-2"
+          /><span class="logo-text">SMK</span>SB</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+              <a class="nav-link brnd" aria-current="page" href="#">Beranda</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Tentang Kami
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Program
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Guru
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Siswa
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">Berita</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Fitur
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <div>
+            <button class="btn-contact">Contact</button>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- End Navbar -->
+
+    <!-- Section Hero -->
+    <section id="hero" class="d-flex align-items-center">
+      <div class="container">
+        <div class="row text-heroo">
+          <div class="col-md-8 text-hero">
+            <h1>SMK <span class="text-SB">Setia Bhakti</span> Bandung</h1>
+            <p class="mt-4 mb-4">
+              sekolah adalah tempat mencetak penerus bangsa yang berkualitas dan
+              berprestasi di segala bidang yang dapat bersaing di dunia
+              internasional
+            </p>
+            <button class="btn-lg">Get Started <img src="image/Expand_right.png" alt=""></button>
+            <button class="btn-lg1">Video <img src="image/Polygon 1.png" alt=""></button>
+            <p class="mt-5 socialm">
+              We are in Socials Media : <i class="bi bi-facebook"></i>
+              <i class="bi bi-twitter"></i> <i class="bi bi-instagram"></i>
+              <i class="bi bi-youtube"></i>
+            </p>
+          </div>
+          <div class="col-md-4">
+            <div class="" style="width: 400px; height: 450px">
+              <img src="image/sb.png" alt="" class="w-100" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Section Hero -->
+
+    <!-- Section Alasan SMK SB -->
+    <section id="alasan-sb">
+      <div class="container">
+        <div class="row">
+          <div class="col-4 text-center mx-auto">
+            <h1 class="alasan-text">
+              Kenapa Harus
+              <span class="text-SB">SMK Setia Bhakti</span> Bandung?
+            </h1>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-7 text-center mx-auto txt-alsn my-3">
+            <p>
+              Alasan kenapa harus memilih untuk bergabung dengan SMK Setia
+              Bhakti Bandung.
+            </p>
+          </div>
+
+          <div class="row">
+            <div class="col-3">
+              <div class="card-alasan text-center">
+                <div class="container-img position-relative mx-auto">
+                  <img
+                    src="image/computer 1.png"
+                    alt=""
+                    class="position-absolute top-50 start-50 translate-middle"
+                  />
+                </div>
+                <h4 class="mt-3">Fasilitas Lengkap</h4>
+                <p class="mt-3">Penunjang belajar dengan kualitas terbaik</p>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="card-alasan text-center">
+                <div class="container-img position-relative mx-auto">
+                  <img
+                    src="image/bank 1.png"
+                    alt=""
+                    class="position-absolute top-50 start-50 translate-middle"
+                  />
+                </div>
+                <h4 class="mt-3">Lingkungan Nyaman</h4>
+                <p class="mt-3">Berada di lingkungan yang nyaman dan asri</p>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="card-alasan text-center">
+                <div class="container-img position-relative mx-auto">
+                  <img
+                    src="image/team 1.png"
+                    alt=""
+                    class="position-absolute top-50 start-50 translate-middle"
+                  />
+                </div>
+                <h4 class="mt-3">Pengajar Kompeten</h4>
+                <p class="mt-3">Guru terbaik dengan pengalaman</p>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="card-alasan text-center">
+                <div class="container-img position-relative mx-auto">
+                  <img
+                    src="image/team (1) 1.png"
+                    alt=""
+                    class="position-absolute top-50 start-50 translate-middle"
+                  />
+                </div>
+                <h4 class="mt-3">Kerja Sama Luas</h4>
+                <p class="mt-3">Dapat kesempatan kerja yang lebih terjamin</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Section Alasan SMK SB -->
+
+    <!-- Section Profil -->
+    <section id="Profil">
+      <div class="container">
+        <div class="row">
+          <div class="col-4 text-center mx-auto">
+            <h1 class="alasan-text">
+              Profil
+              <span class="text-SB">SMK Setia Bhakti</span> Bandung
+            </h1>
+          </div>
+        </div>
+
+        <div class="row mt-5">
+          <div class="col-6">
+            <img src="image/Rectangle 13.png" alt="" height="380" width="500" />
+          </div>
+          <div class="col-6 sambutan my-3">
+            <h2>Sembutan Kepala Sekolah SMK Setia Bhakti Bandung</h2>
+            <p>
+              sekolah adalah tempat mencetak penerus bangsa yang berkualitas dan
+              berprestasi di segala bidang yang dapat bersaing di dunia
+              internasional
+            </p>
+            <p>
+              dan Sekolah adalah tempat anak-anak mendapatkan dukungan untuk
+              melengkapi pembelajarannya di sekola
+            </p>
+            <button class="btn-prfl my-3">Baca Selanjutnya <img src="image/Expand_right.png" alt=""></button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Section Profil -->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
