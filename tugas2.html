@@ -165,7 +165,7 @@
 
       /* Style Profil SB */
       #Profil {
-        padding: 45px 0;
+        padding: 55px 0;
         width: 100%;
       }
       .sambutan h2{
@@ -187,7 +187,8 @@
 
       /* Style Jurusan */
       #jurusan{
-        height: 100vh;
+        padding: 70px 0;
+        width: 100%;
       }
       .card-jurusan{
         width: 292px;
@@ -214,6 +215,97 @@
         color: #DBDBDB;
       }
       /* End Style Jurusan */
+
+      /* Style Ekstrakulikuler */
+      #eskul{
+        height: 100vh;
+        padding: 70px 0;
+        background-color: #F0EFFF;
+      }
+      .card-eskul{
+        width: 265px;
+        height: 265px;
+        background-color: #fff;
+        border-radius: 10px;
+        padding: 25px;
+        margin-right: 10px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        transition: box-shadow 0.3s ease;
+      }
+      .card-eskul:hover{
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+      }
+      .container-eskulimg{
+        width: 54px;
+        height: 54px;
+        margin-bottom: 30px;
+      }
+      .card-eskul h4{
+        font-size: 24px;
+        font-weight: 700;
+        margin-bottom: 10px;
+      }
+      .card-eskul p{
+        font-size: 16px;
+        font-weight: 500;
+      }
+      /* End Style Ekstrakulikuler */
+
+      /* Style Berita */
+      #berita{
+        padding: 70px 0;
+      }
+      .card-berita{
+        width: 250px;
+        height: 332px;
+        background-color: #fff;
+        border-radius: 10px;
+      }
+      .container-beritaimg{
+        margin-bottom: 10px;
+      }
+      .card-berita p{
+        font-size: 13px;
+        font-weight: 500;
+        margin-bottom: -15px;
+        margin-top: -10px;
+      }
+      .card-berita h4{
+        font-size: 17px;
+        font-weight: 700;
+      }
+      .textt-cardb{
+        padding: 10px;
+      }
+      .btn-berita{
+        border-radius: 50px;
+        width: 212px;
+        height: 62px;
+        background-color: var(--pr-ungu);
+        border: none;
+      }
+      .btn-berita:hover{
+        color: var(--pr-ungu);
+        background-color: #fff;
+      }
+      /* End Style Berita */
+
+      /* Style Dokumentasi Berita */
+      #dokumentasi{
+        height: 100vh;
+        padding: 70px 0;
+        background-color: var(--pr-ungu);
+      }
+      .judul-brt h2{
+        font-size: 40px;
+        font-weight: 700;
+        color: #fff;
+      }
+      .info-ktk{
+        width: 318px;
+        height: 166px;
+      }
+      /* End Style Dokumentasi Berita */
     </style>
   </head>
   <body>
@@ -496,7 +588,7 @@
     <!-- End Section Profil -->
 
     <!-- Section Jurusan -->
-     <section id="jurusan">
+    <section id="jurusan">
       <div class="container">
         <div class="row">
           <div class="col-4 text-center mx-auto">
@@ -509,7 +601,7 @@
           </div>
         </div>
 
-        <div class="row">
+        <div class="row d-flex justify-content-center">
           <div class="col-4">
             <div class="card-jurusan">
               <div class="container-jurusanimg">
@@ -537,7 +629,7 @@
               <p>Details</p>
             </div>
           </div>
-          <div class="col-4">
+          <div class="col-4 mt-5">
             <div class="card-jurusan">
               <div class="container-jurusanimg">
                 <img src="image/computer (1) 1.png" alt="" class="p-2">
@@ -546,7 +638,7 @@
               <p>Details</p>
             </div>
           </div>
-          <div class="col-4">
+          <div class="col-4 mt-5">
             <div class="card-jurusan">
               <div class="container-jurusanimg">
                 <img src="image/computer (1) 1.png" alt="" class="p-2">
@@ -557,8 +649,216 @@
           </div>
         </div>
       </div>
-     </section>
+    </section>
     <!-- End Section Jurusan -->
+
+    <!-- Section Ekstrakulikuler -->
+    <section id="eskul">
+      <div class="container">
+        <div class="row">
+          <div class="col-5 text-center mx-auto">
+            <h1 class="alasan-text">Ekstrakulikuler Di <br> <span class="text-SB">SMK Setia Bhakti</span> Bandung</h1>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-6 text-center mx-auto my-3">
+            <p>Pilihan Ekstrakulikuler di SMK Setia Bhakti Bandung.</p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-3">
+            <div class="card-eskul">
+              <div class="container-eskulimg">
+                <img src="image/pramuka-logohd-38028 1.png" alt="">
+              </div>
+              <h4>Praja Muda Karana</h4>
+              <p>Pertama kali dibentuk team tahun 2002</p>
+              <p><a class="link-opacity-50-hover link-eskul" href="#">Details</a></p>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="card-eskul">
+              <div class="container-eskulimg">
+                <img src="image/Pmi 1.png" alt="">
+              </div>
+              <h4>Palang Merah Remaja</h4>
+              <p>Pertama kali dibentuk team tahun 2003</p>
+              <p><a class="link-opacity-50-hover link-eskul" href="#">Details</a></p>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="card-eskul">
+              <div class="container-eskulimg">
+                <img src="image/pramuka-logohd-38028 1.png" alt="">
+              </div>
+              <h4>Pecinta Alam</h4>
+              <p>Pertama kali dibentuk team tahun 2008</p>
+              <p><a class="link-opacity-50-hover link-eskul" href="#">Details</a></p>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="card-eskul">
+              <div class="container-eskulimg">
+                <img src="image/pramuka-logohd-38028 1.png" alt="">
+              </div>
+              <h4>Sinematografi</h4>
+              <p>Pertama kali dibentuk team tahun 2016</p>
+              <p><a class="link-opacity-50-hover link-eskul" href="#">Details</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Section Ekstrakulikuler -->
+    
+    <!-- Section Berita -->
+    <section id="berita">
+      <div class="container">
+        <div class="row">
+          <div class="col-5 text-center mx-auto">
+            <h1 class="alasan-text">Berita Terbaru Di<span class="text-SB"> SMK Setia Bhakti </span>Bandung</h1>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-6 text-center mx-auto my-3">
+            <p>Berita Terbaru Tentang SMK Setia Bhakti Bandung.</p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-3 mb-4">
+            <div class="card-berita">
+              <div class="container-beritaimg">
+                <img src="image/Rectangle 48.png" alt="" style="width: 250px; height: 158px;">
+              </div>
+              <div>
+                <p class="textt-cardb">13 December 2023 </p>
+                <h4 class="textt-cardb">Pendaftaran SMK Setia Bhakti Bandung Telah Dibuka !</h4>
+                <p class="textt-cardb">By Admin SmkSB</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-3 mb-4">
+            <div class="card-berita">
+              <div class="container-beritaimg">
+                <img src="image/Rectangle 48.png" alt="" style="width: 250px; height: 158px;">
+              </div>
+              <div>
+                <p class="textt-cardb">13 December 2023 </p>
+                <h4 class="textt-cardb">Pendaftaran SMK Setia Bhakti Bandung Telah Dibuka !</h4>
+                <p class="textt-cardb">By Admin SmkSB</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-3 mb-4">
+            <div class="card-berita">
+              <div class="container-beritaimg">
+                <img src="image/Rectangle 48.png" alt="" style="width: 250px; height: 158px;">
+              </div>
+              <div>
+                <p class="textt-cardb">13 December 2023 </p>
+                <h4 class="textt-cardb">Pendaftaran SMK Setia Bhakti Bandung Telah Dibuka !</h4>
+                <p class="textt-cardb">By Admin SmkSB</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-3 mb-4">
+            <div class="card-berita">
+              <div class="container-beritaimg">
+                <img src="image/Rectangle 48.png" alt="" style="width: 250px; height: 158px;">
+              </div>
+              <div>
+                <p class="textt-cardb">13 December 2023 </p>
+                <h4 class="textt-cardb">Pendaftaran SMK Setia Bhakti Bandung Telah Dibuka !</h4>
+                <p class="textt-cardb">By Admin SmkSB</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-3 mb-5">
+            <div class="card-berita">
+              <div class="container-beritaimg">
+                <img src="image/Rectangle 48.png" alt="" style="width: 250px; height: 158px;">
+              </div>
+              <div>
+                <p class="textt-cardb">13 December 2023 </p>
+                <h4 class="textt-cardb">Pendaftaran SMK Setia Bhakti Bandung Telah Dibuka !</h4>
+                <p class="textt-cardb">By Admin SmkSB</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-3 mb-5">
+            <div class="card-berita">
+              <div class="container-beritaimg">
+                <img src="image/Rectangle 48.png" alt="" style="width: 250px; height: 158px;">
+              </div>
+              <div>
+                <p class="textt-cardb">13 December 2023 </p>
+                <h4 class="textt-cardb">Pendaftaran SMK Setia Bhakti Bandung Telah Dibuka !</h4>
+                <p class="textt-cardb">By Admin SmkSB</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-3 mb-5">
+            <div class="card-berita">
+              <div class="container-beritaimg">
+                <img src="image/Rectangle 48.png" alt="" style="width: 250px; height: 158px;">
+              </div>
+              <div>
+                <p class="textt-cardb">13 December 2023 </p>
+                <h4 class="textt-cardb">Pendaftaran SMK Setia Bhakti Bandung Telah Dibuka !</h4>
+                <p class="textt-cardb">By Admin SmkSB</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-3 mb-5">
+            <div class="card-berita">
+              <div class="container-beritaimg">
+                <img src="image/Rectangle 48.png" alt="" style="width: 250px; height: 158px;">
+              </div>
+              <div>
+                <p class="textt-cardb">13 December 2023 </p>
+                <h4 class="textt-cardb">Pendaftaran SMK Setia Bhakti Bandung Telah Dibuka !</h4>
+                <p class="textt-cardb">By Admin SmkSB</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-12 text-center mx-auto mb-3">
+            <button type="button" class="btn btn-secondary btn-berita">Semua Berita</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Section Berita -->
+
+    <!-- Section Dokumentasi Kegiatan -->
+    <section id="dokumentasi">
+      <div class="container">
+        <div class="row">
+          <div class="col-6 text-center mx-auto judul-brt">
+            <h2>Foto Documentasi Kegiatan SMK Setia Bhakti Bandung</h2>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-4">
+            <div class="card-dokumentasi">
+              <div class="container-dokimg">
+                <img src="image/Rectangle 66.png" alt="">
+                <div class="info-ktk">
+                <h3>Meja Karya Salah satu Siswa </h3>
+                <p>SMK Setia Bhakti Bandung</p>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Section Dokumentasi Kegiatan -->
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
