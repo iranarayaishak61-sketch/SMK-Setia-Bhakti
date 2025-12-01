@@ -292,7 +292,6 @@
 
       /* Style Dokumentasi Berita */
       #dokumentasi{
-        height: 100vh;
         padding: 70px 0;
         background-color: var(--pr-ungu);
       }
@@ -301,11 +300,50 @@
         font-weight: 700;
         color: #fff;
       }
-      .info-ktk{
+      .card-fitur{
         width: 318px;
         height: 166px;
       }
+      .overlay{
+        background: rgba(255, 255, 255, 0.5);
+        opacity: 1;
+        padding:35px;
+      }
+      .card-fitur h3{
+        font-size: 24px;
+        font-weight: 700;
+      }
+      .card-fitur span{
+        font-size: 15px;
+        font-weight: 500;
+      }
       /* End Style Dokumentasi Berita */
+
+      /* Style Alumni */
+      #alumni{
+        padding: 70px 0;
+        background-color: #fff;
+      }
+      .text-alumn h3{
+        font-size: 32px;
+        font-weight: 700;
+      }
+      .text-alumn p{
+        font-size: 17px;
+        font-weight: 500;
+        color: #000;
+      }
+      .text-alumnpp p{
+        font-size: 17px;
+        font-weight: 500;
+        color: #989898;
+      }
+      .text-alumn a{
+        text-decoration: none;
+        color: var(--pr-ungu);
+        font-size: 14px;
+      }
+      /* End Style Alumni */
     </style>
   </head>
   <body>
@@ -843,22 +881,97 @@
           </div>
         </div>
 
-        <div class="row">
+      <div class="container">
+        <div class="row mt-4">
           <div class="col-4">
-            <div class="card-dokumentasi">
-              <div class="container-dokimg">
-                <img src="image/Rectangle 66.png" alt="">
-                <div class="info-ktk">
-                <h3>Meja Karya Salah satu Siswa </h3>
-                <p>SMK Setia Bhakti Bandung</p>
+            <div class="card-fitur position-relative" style="height: 384px;">
+            <img src="image/Rectangle 66.png" alt="" />
+            <div class="overlay position-absolute start-0 end-0 bottom-0 top-50">
+              <div class="">
+                <h3 class="mb-2">Meja Karya Salah <br> satu Siswa </h3>
+                <span>SMK Setia Bhakti <br> Bandung</span>
               </div>
+            </div>
+          </div>
+          </div>
+          <div class="col-4">
+            <div class="card-fitur position-relative" style="height: 384px;">
+            <img src="image/Rectangle 76.png" alt="" />
+            <div class="overlay position-absolute start-0 end-0 bottom-0 top-50">
+              <div class="">
+                <h3 class="mb-2">Reuni Akbar Ang <br>23</h3>
+                <span>Aula SMK Setia<br> Bhakti Bandung</span>
+              </div>
+            </div>
+          </div>
+          </div>
+          <div class="col-4">
+            <div class="card-fitur position-relative" style="height: 384px;">
+            <img src="image/Rectangle 74.png" alt="" />
+            <div class="overlay position-absolute start-0 end-0 bottom-0 top-50">
+              <div class="">
+                <h3 class="mb-2">Perpustakaan <br> Baru</h3>
+                <span>Perpustakaan SMK Setia <br> Bhakti Bandung</span>
+              </div>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+        
+      </div>
+    </section>
+    <!-- End Section Dokumentasi Kegiatan -->
+
+    <!-- section Alumni -->
+     <section id="alumni">
+      <div class="container">
+        <div class="row">
+          <div class="col-4 text-center mx-auto">
+            <h1 class="alasan-text">Profil Alumni <span class="text-SB">SMK Setia Bhakti</span> Bandung</h1>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-5 text-center mx-auto my-3">
+            <p>Profil Alumni SMK Setia Bhakti Bandung</p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-6">
+            <div class="row">
+              <div class="col-6">
+                <img src="image/Rectangle 83.png" alt="">
+              </div>
+              <div class="col-6 text-alumn mx-auto">
+                <h3>Wilyam Arilsom ST</h3>
+                <p>Angkatan 2009</p>
+                <div class="text-alumnpp">
+                  <p>Livianti adalah seorang ui ux yang berkerda di Inggris saat ini dia adalah salah satu alumni yang berprestasi.</p>
+                </div>
+                <a href="#">Baca Selengkapnya</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="row">
+              <div class="col-6">
+                <img src="image/Rectangle 85.png" alt="">
+              </div>
+              <div class="col-6 text-alumn mx-auto">
+                <h3>Windi alextria ayu</h3>
+                <p>Angkatan 2014</p>
+                <div class="text-alumnpp">
+                  <p>Livianti adalah seorang ui ux yang berkerda di Inggris saat ini dia adalah salah satu alumni yang berprestasi.</p>
+                </div>
+                <a href="#">Baca Selengkapnya</a>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </section>
-    <!-- End Section Dokumentasi Kegiatan -->
+     </section>
+    <!-- end section Alumni -->
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
